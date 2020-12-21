@@ -1,4 +1,5 @@
 import { Container } from 'inversify';
+import 'reflect-metadata';
 import { TYPES } from './inversify.types';
 
 const container = new Container();
