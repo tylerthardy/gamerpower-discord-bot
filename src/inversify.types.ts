@@ -3,5 +3,7 @@ export const TYPES = {
     DiscordBotService: Symbol('DiscordBotService'),
     Environment: Symbol('Environment'),
     GamerPowerService: Symbol('GamerPowerService'),
-    HttpClient: Symbol('HttpClient')
+    HttpClient: Symbol('HttpClient'),
+    CommandHandler: Symbol('CommandHandler'),
+    ScheduledTaskHandler: Symbol('ScheduledTaskHandler')
 }
