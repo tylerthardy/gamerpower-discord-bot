@@ -12,9 +12,11 @@
   "license": "ISC",
   "devDependencies": {
     "@types/node": "^14.14.14",
+    "@types/node-fetch": "^2.5.7",
     "discord.js": "^12.5.1",
     "dotenv": "^8.2.0",
     "inversify": "^5.0.5",
+    "node-fetch": "^2.6.1",
     "nodemon": "^2.0.6",
     "reflect-metadata": "^0.1.13",
     "ts-node": "^9.1.1",

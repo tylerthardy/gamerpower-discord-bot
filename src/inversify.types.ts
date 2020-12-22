@@ -1,5 +1,7 @@
 export const TYPES = {
-    DiscordClient: Symbol("DiscordClient"),
+    DiscordClient: Symbol('DiscordClient'),
     DiscordBotService: Symbol('DiscordBotService'),
-    Environment: Symbol('Environment')
+    Environment: Symbol('Environment'),
+    GamerPowerService: Symbol('GamerPowerService'),
+    HttpClient: Symbol('HttpClient')
 }
