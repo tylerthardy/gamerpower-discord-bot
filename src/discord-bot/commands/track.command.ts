@@ -25,7 +25,7 @@ export class TrackGamerPowerCommand implements ICommand {
         }
         const channel = message.channel as TextChannel;
         channel.send('Tracking giveaways on this channel!');
-        this.scheduledTaskHandler.registerTask('track', 5000, () => this.reportNewGiveaways(channel));
+        this.scheduledTaskHandler.registerTask('track', 15*60000, () => this.reportNewGiveaways(channel));
     };
 
     private async reportNewGiveaways(channel: TextChannel) {
