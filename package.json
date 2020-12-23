@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon",
-    "start": "ts-node src/index.ts"
+    "start": "node --inspect-brk -r ts-node/register src/index.ts"
   },
   "author": "",
   "license": "ISC",
