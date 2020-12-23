@@ -16,9 +16,9 @@ const container = new Container();
 container.bind<Environment>(TYPES.Environment).toConstantValue(EnvironmentHelper.toEnvironment(process.env));
 container.bind<DiscordClient>(TYPES.DiscordClient).toConstantValue(new Client());
 container.bind<HttpClient>(TYPES.HttpClient).to(HttpClient).inSingletonScope();
-container.bind<DiscordBotService>(TYPES.DiscordBotService).to(DiscordBotService).inSingletonScope();
 container.bind<GamerPowerService>(TYPES.GamerPowerService).to(GamerPowerService).inSingletonScope();
 container.bind<CommandHandler>(TYPES.CommandHandler).to(CommandHandler).inSingletonScope();
 container.bind<ScheduledTaskHandler>(TYPES.ScheduledTaskHandler).to(ScheduledTaskHandler).inSingletonScope();
+container.bind<DiscordBotService>(TYPES.DiscordBotService).to(DiscordBotService).inSingletonScope();
 
 export default container;

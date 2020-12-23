@@ -1,7 +1,11 @@
 import { Message } from "discord.js";
-import { injectable } from "inversify";
+import { inject, injectable } from "inversify";
+import { GamerPowerService } from "../../gamerpower/gamerpower.service";
+import { TYPES } from "../../inversify.types";
 import { ICommand } from "../commands/model/command.interface";
 import { TestCommand } from "../commands/test.command";
+import { TrackGamerPowerCommand } from "../commands/track.command";
+import { ScheduledTaskHandler } from "./scheduled-task.handler";
 
 @injectable()
 export class CommandHandler {
@@ -9,6 +13,7 @@ export class CommandHandler {
 
     constructor() {
         this.registerCommand(new TestCommand());
+        this.registerCommand(new TrackGamerPowerCommand());
     }
 
     registerCommand(command: ICommand) {
